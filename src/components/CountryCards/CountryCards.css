@@ -1,0 +1,98 @@
+.countryCardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 3.2rem 5.5rem 6.5rem;
+}
+
+.staticCountryCardsContainer {
+  text-align: left;
+  background-color: var(--White);
+}
+
+.staticCountryCard {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  background: var(--White);
+  box-shadow: var(--Box-shadow-2);
+  border-radius: 0.5rem;
+}
+
+.countryFlag {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+  box-shadow: var(--Box-shadow-3);
+}
+
+.countryCardDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 0 2.4rem 4.8rem;
+}
+
+.countryName {
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: var(--Gray-950);
+}
+
+.countryDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.population,
+.region,
+.capital {
+  font-weight: 600;
+}
+
+.countryPopulation,
+.countryRegion,
+.countryCapital {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.countryCardsDarkMode900 {
+  background-color: var(--Blue-900);
+  color: var(--White);
+}
+
+.countryCardsDarkMode950 {
+  background-color: var(--Blue-950);
+  color: var(--White);
+}
+
+@media (min-width: 48em) {
+  .countryCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7.2rem;
+    padding: 0 8.4rem 5.8rem;
+  }
+
+  .staticCountryCard {
+    width: 100%;
+  }
+}
+
+@media (min-width: 90em) {
+  .countryCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 7.2rem;
+    padding: 0 8.4rem 5.8rem;
+  }
+
+  .staticCountryCard {
+    width: 100%;
+  }
+}

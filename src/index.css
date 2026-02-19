@@ -1,0 +1,67 @@
+/* =========================
+   Fonts and Root Variables
+   ========================= */
+@font-face {
+  font-family: "Variable";
+  src: url("../src/assets/fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf")
+    format("truetype");
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --Gray-50: hsl(0, 0%, 99%);
+  --Gray-400: hsl(0, 0%, 50%);
+  --Gray-950: hsl(200, 15%, 8%);
+  --Blue-900: hsl(209, 23%, 22%);
+  --Blue-950: hsl(207, 26%, 17%);
+
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  /* Box Shadows */
+  --Box-shadow-1: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.0532439);
+  --Box-shadow-2: 0 0 0.7rem 0.2rem rgba(0, 0, 0, 0.1);
+  --Box-shadow-3: 0 0 0.7rem 0.2rem rgba(0, 0, 0, 0.0294384);
+  --Box-shadow-4: 0 0 0.4rem 0.1rem rgba(0, 0, 0, 0.104931);
+  --Box-shadow-5: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.06);
+
+  /* Fonts */
+  --Variable: "Variable", sans-serif;
+}
+
+/* =========================
+   Global Reset & Utilities
+   ========================= */
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--Variable);
+  min-height: 100dvh;
+  background-color: var(--Gray-50);
+}
+
+button {
+  font: inherit;
+  border: none;
+  line-height: 1;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.mainDarkMode {
+  background-color: var(--Blue-950);
+  color: var(--White);
+}

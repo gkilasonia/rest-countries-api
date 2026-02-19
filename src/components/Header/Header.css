@@ -1,0 +1,58 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 1.6rem;
+  background-color: var(--White);
+  color: var(--Gray-950);
+  box-shadow: var(--Box-shadow-5);
+}
+
+.headerHeading {
+  font-weight: 800;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.modeSwitcherBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 600;
+  background: none;
+  color: inherit;
+}
+
+.darkMode {
+  background-color: var(--Blue-900);
+  color: var(--White);
+}
+
+@media (min-width: 48em) {
+  .headerContainer {
+    padding: 3rem 4.1rem;
+  }
+}
+
+@media (min-width: 90em) {
+  .headerContainer {
+    padding: 2.35rem 8.05rem;
+  }
+
+  .headerHeading {
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+  }
+
+  .modeSwitcherBtn {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+  }
+
+  .modeIcon {
+    width: 2rem;
+    height: 2rem;
+  }
+}

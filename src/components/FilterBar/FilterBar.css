@@ -1,0 +1,133 @@
+/* Visually hidden utility class for accessibility */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+.filter-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2.4rem 1.6rem 0;
+}
+
+.search-wrapper-relative {
+  position: relative;
+}
+
+.autocomplete-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--background, #fff);
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0.1rem solid #ccc;
+  border-top: none;
+  max-height: 20rem;
+  overflow-y: auto;
+}
+
+.autocomplete-suggestion {
+  padding: 0.8rem 1.6rem;
+  cursor: pointer;
+}
+
+.search-wrapper {
+  display: flex;
+  background-color: var(--White);
+  box-shadow: var(--Box-shadow-1);
+  border-radius: 0.5rem;
+}
+
+.search-input-field {
+  display: flex;
+  padding: 1.6rem 3.2rem;
+  width: 100%;
+  background-color: var(--White);
+  box-shadow: var(--Box-shadow-1);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--Gray-250);
+}
+
+.darkModeInput {
+  background-color: var(--Blue-900) !important;
+  color: var(--White) !important;
+}
+
+.darkModeSelect {
+  background-color: var(--Blue-900) !important;
+  color: var(--White) !important;
+}
+
+.darkModeUl {
+  background-color: var(--Blue-900) !important;
+  color: var(--White) !important;
+}
+
+.darkModeOption {
+  background-color: var(--Blue-900) !important;
+  color: var(--White) !important;
+}
+
+.dropdown-wrapper {
+  background-color: var(--White);
+  box-shadow: var(--Box-shadow-1);
+  border-radius: 0.5rem;
+  padding: 1.6rem 2.4rem;
+  width: 58.3%;
+}
+
+.dropdown-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--White);
+  border: none;
+  color: var(--Gray-250);
+}
+
+.dropdown-menu option {
+  padding: 0.8rem 1.6rem;
+}
+
+@media (min-width: 48em) {
+  .filter-controls {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.8rem;
+    padding: 4.8rem 4rem;
+  }
+
+  .search-wrapper {
+    width: 70%;
+  }
+
+  .dropdown-wrapper {
+    width: 29%;
+  }
+}
+
+@media (min-width: 90em) {
+  .filter-controls {
+    padding: 4.8rem 8rem;
+  }
+
+  .search-wrapper {
+    width: 37.5%;
+  }
+
+  .dropdown-wrapper {
+    width: 15.6%;
+  }
+}
